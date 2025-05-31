@@ -1,96 +1,135 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from './ProjectCards';
+import Particle from '../Particle';
+import leaf from '../../Assets/Projects/leaf.png';
+import emotion from '../../Assets/Projects/emotion.png';
+import editor from '../../Assets/Projects/codeEditor.png';
+import chatify from '../../Assets/Projects/chatify.png';
+import suicide from '../../Assets/Projects/suicide.png';
+import bitsOfCode from '../../Assets/Projects/blog.png';
 
 function Projects() {
-  return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
+    return (
+        <Container fluid className="project-section">
+            <Particle />
+            <Container>
+                <h1 className="project-heading">
+                    My Recent <strong className="purple">Works </strong>
+                </h1>
+                <p style={{ color: 'white' }}>
+                    Here are a few projects I've worked on recently.
+                </p>
+                <Row
+                    style={{ justifyContent: 'center', paddingBottom: '10px' }}
+                >
+                    <Col md={4} className="project-card">
+                        <ProjectCard
+                            imgPath={chatify}
+                            isBlog={false}
+                            title="CineConnect"
+                            description="A comprehensive web platform built for cinema enthusiasts, offering movie information, theater showtimes, fan discussions, and a unique marketplace for movie-themed artwork."
+                            techStack={[
+                                'Node.js',
+                                'Express',
+                                'Next.js',
+                                'Tailwind CSS',
+                                'Supabase',
+                                'PostgreSQL',
+                            ]}
+                            deployment={['Vercel', 'Render']}
+                            projectType="CSE 408: Software Development Sessional"
+                            ghLink="https://github.com/ishrak26/CineConnect-Ultimate-Movie-Enthusiasts-Hub"
+                            demoLink="https://cineconnect.vercel.app/"
+                        />
+                    </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
+                    <Col md={4} className="project-card">
+                        <ProjectCard
+                            imgPath={bitsOfCode}
+                            isBlog={false}
+                            title="Hippocampus Segmentation for Alzheimer’s Dementia Prediction"
+                            description="An image segmentation project focusing on hippocampus extraction from MRI scans to support early-stage dementia prediction. We used a U-Net model with Swish activation and Dice loss to improve segmentation quality."
+                            techStack={[
+                                'TensorFlow',
+                                'U-Net',
+                                'Swish Activation',
+                                'Spatial Dropout',
+                                'Dice Loss',
+                                'MRI Preprocessing',
+                            ]}
+                            projectType="CSE 472: Machine Learning Sessional"
+                            techStackLabel="Keywords"
+                            ghLink="https://github.com/ishrak26/CSE-472-Machine-Learning-Sessional-Project"
+                        />
+                    </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
+                    <Col md={4} className="project-card">
+                        <ProjectCard
+                            imgPath={editor}
+                            isBlog={false}
+                            title="Maguire-in-the-Middle"
+                            description="A real-time 5-player embedded game where one player attempts to catch a ball while the other four players aim to prevent it. The game is built using joysticks, a gyroscope, and microcontrollers to simulate interactive gameplay."
+                            techStack={[
+                                'ATMega32',
+                                'Arduino Uno',
+                                'C/C++',
+                                'Joysticks',
+                                'Gyroscope',
+                            ]}
+                            projectType="CSE 316: Microprocessors and Embedded Systems Sessional"
+                            techStackLabel="Hardware & Programming Tools"
+                            ghLink="https://github.com/ishrak26/Maguire-in-the-Middle"
+                            demoLink="https://www.youtube.com/watch?v=NY4GrnJCqsM"
+                        />
+                    </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
+                    <Col md={4} className="project-card">
+                        <ProjectCard
+                            imgPath={leaf}
+                            isBlog={false}
+                            title="Football Player Transfer Database System"
+                            description="A JavaFX-based desktop application simulating the football player transfer market. The system supports real-time player transfers between clubs using Java networking and multi-threading, with a GUI to manage player data, initiate transfers, and handle concurrent operations."
+                            techStack={[
+                                'Java',
+                                'JavaFX',
+                                'Multi-threading',
+                                'Networking',
+                                'OOP',
+                            ]}
+                            deployment={['Desktop Application']}
+                            projectType="CSE 108: Object-Oriented Programming Sessional"
+                            techStackLabel="Technologies & Concepts"
+                            deploymentLabel="Platform"
+                            ghLink="https://github.com/ishrak26/Football-Player-Database-System"
+                            demoLink="https://youtu.be/KRCxGvgQvro?si=Ux9-tG7kxH4VBnu6"
+                        />
+                    </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
-        </Row>
-      </Container>
-    </Container>
-  );
+                    <Col md={4} className="project-card">
+                        <ProjectCard
+                            imgPath={suicide}
+                            isBlog={false}
+                            title="DX-Ball"
+                            description="A recreation of the classic arcade-style DX-Ball game built using C/C++ and the iGraphics library. The project emphasizes core structured programming principles through interactive gameplay mechanics, including paddle movement, ball physics, and brick collision logic."
+                            techStack={[
+                                'C',
+                                'C++',
+                                'iGraphics',
+                                'Structured Programming',
+                            ]}
+                            deployment={['Desktop Game']}
+                            projectType="CSE 102: Structured Programming Sessional"
+                            techStackLabel="Languages & Libraries"
+                            deploymentLabel="Platform"
+                            ghLink="https://github.com/ishrak26/DX-Ball"
+                            demoLink="https://www.facebook.com/100002802882052/videos/2930693760367358/"
+                        />
+                    </Col>
+                </Row>
+            </Container>
+        </Container>
+    );
 }
 
 export default Projects;

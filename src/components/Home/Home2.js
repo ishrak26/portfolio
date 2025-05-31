@@ -27,18 +27,18 @@ function Home2() {
                             <i>
                                 <b className="purple">
                                     {' '}
-                                    C++, Javascript and Go.{' '}
+                                    C++, Python and Java.{' '}
                                 </b>
                             </i>
                             <br />
                             <br />
-                            My field of Interest's are building new &nbsp;
+                            My field of interests are lie in &nbsp;
                             <i>
                                 <b className="purple">
-                                    Web Technologies and Products{' '}
+                                    Bio and Health Informatics{' '}
                                 </b>{' '}
-                                and also in areas related to{' '}
-                                <b className="purple">Blockchain.</b>
+                                {/* and also in areas related to{' '}
+                                <b className="purple">Blockchain.</b> */}
                             </i>
                             <br />
                             <br />
@@ -97,7 +97,7 @@ function Home2() {
                             </li>
                             <li className="social-icons">
                                 <a
-                                    href="https://www.linkedin.com/in/ishrak26/"
+                                    href="https://www.linkedin.com/in/ishrak26"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="icon-colour  home-social-icons"
@@ -107,7 +107,7 @@ function Home2() {
                             </li>
                             <li className="social-icons">
                                 <a
-                                    href="https://www.instagram.com/ishrak26"
+                                    href="https://www.instagram.com/ahsan_ishrak"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="icon-colour home-social-icons"

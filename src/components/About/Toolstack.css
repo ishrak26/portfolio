@@ -1,0 +1,43 @@
+/* Icon styling */
+.tech-icons {
+    font-size: 3em;
+    margin: 20px;
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+}
+
+.tech-icons:hover {
+    transform: scale(1.2);
+}
+
+/* Tooltip styling */
+.tooltip.bs-tooltip-top .tooltip-inner,
+.tooltip.bs-tooltip-bottom .tooltip-inner,
+.tooltip.bs-tooltip-start .tooltip-inner,
+.tooltip.bs-tooltip-end .tooltip-inner {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #fff !important;
+    border: 0px solid rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Optional: transparent tooltip arrow */
+.tooltip .tooltip-arrow::before {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

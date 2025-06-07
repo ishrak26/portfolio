@@ -2,12 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/avatar.svg';
 import Tilt from 'react-parallax-tilt';
-import {
-    AiFillGithub,
-    AiOutlineTwitter,
-    AiFillInstagram,
-} from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { AiFillGithub, AiOutlineX, AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn, FaKaggle, FaFacebook } from 'react-icons/fa';
+import { SiCodeforces } from 'react-icons/si';
+import { MdEmail } from 'react-icons/md';
 
 function Home2() {
     return (
@@ -32,10 +30,11 @@ function Home2() {
                             </i>
                             <br />
                             <br />
-                            My field of interests are lie in &nbsp;
+                            My field of interests lie in &nbsp;
                             <i>
                                 <b className="purple">
-                                    Bio and Health Informatics{' '}
+                                    Bio and Health Informatics, Single-Cell
+                                    Transcriptomics, and Deep Learning.
                                 </b>{' '}
                                 {/* and also in areas related to{' '}
                                 <b className="purple">Blockchain.</b> */}
@@ -53,7 +52,7 @@ function Home2() {
                             </i>
                             &nbsp; like
                             <i>
-                                <b className="purple"> React.js and Next.js</b>
+                                <b className="purple"> React.js and Next.js.</b>
                             </i>
                         </p>
                     </Col>
@@ -77,22 +76,12 @@ function Home2() {
                         <ul className="home-about-social-links">
                             <li className="social-icons">
                                 <a
-                                    href="https://github.com/ishrak26"
+                                    href="mailto:ishrak26@gmail.com"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="icon-colour  home-social-icons"
                                 >
-                                    <AiFillGithub />
-                                </a>
-                            </li>
-                            <li className="social-icons">
-                                <a
-                                    href="https://twitter.com/ishrak26"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="icon-colour  home-social-icons"
-                                >
-                                    <AiOutlineTwitter />
+                                    <MdEmail />
                                 </a>
                             </li>
                             <li className="social-icons">
@@ -105,6 +94,57 @@ function Home2() {
                                     <FaLinkedinIn />
                                 </a>
                             </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://github.com/ishrak26"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <AiFillGithub />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://kaggle.com/ishrak26"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <FaKaggle />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://codeforces.com/profile/ishrak26"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <SiCodeforces />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://facebook.com/ishrak26"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <FaFacebook />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                    href="https://x.com/ahsan_ishrak"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="icon-colour  home-social-icons"
+                                >
+                                    <AiOutlineX />
+                                </a>
+                            </li>
+
                             <li className="social-icons">
                                 <a
                                     href="https://www.instagram.com/ahsan_ishrak"

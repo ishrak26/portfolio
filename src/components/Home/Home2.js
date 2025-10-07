@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import myImg from '../../Assets/avatar.svg';
+// import myImg from '../../Assets/avatar.svg';
+import myImg from '../../Assets/me.png';
 import Tilt from 'react-parallax-tilt';
 import { AiFillGithub, AiOutlineX, AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn, FaKaggle, FaFacebook } from 'react-icons/fa';
@@ -56,7 +57,7 @@ function Home2() {
                             </i>
                         </p>
                     </Col>
-                    <Col md={4} className="myAvtar">
+                    {/* <Col md={4} className="myAvtar">
                         <Tilt>
                             <img
                                 src={myImg}
@@ -64,7 +65,7 @@ function Home2() {
                                 alt="avatar"
                             />
                         </Tilt>
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row>
                     <Col md={12} className="home-about-social">

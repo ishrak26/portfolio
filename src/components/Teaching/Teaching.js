@@ -61,7 +61,46 @@ function Teaching() {
                 },
             ],
         },
+        {
+            semester: 'Summer 2025',
+            year: 'August 2025 - September 2025',
+            institution: 'BRAC University',
+            institutionLink: 'https://www.bracu.ac.bd/',
+            courses: [
+                {
+                    name: 'CSE 220: Data Structures',
+                    link: 'https://cse.sds.bracu.ac.bd/course/view/CSE220',
+                    details: [
+                        'Taught fundamental data structures such as arrays, linked lists, stacks, queues, hash tables, binary search trees, heaps and graphs.',
+                        'Implemented data structures in Python and Java.',
+                    ],
+                },
+                {
+                    name: 'CSE 221: Algorithms',
+                    link: 'https://cse.sds.bracu.ac.bd/course/view/CSE221',
+                    details: [
+                        "Taught graph algorithms including BFS, DFS, Kosaraju's, Dijkstra's and Minimum Spanning Tree algorithms.",
+                        'Covered algorithm design techniques including divide and conquer, dynamic programming, backtracking and greedy algorithms.',
+                        'Analyzed algorithm complexity and performance.',
+                        'Implemented algorithms in Python and Java.',
+                        'Guided students through problem-solving sessions and coding exercises.',
+                    ],
+                },
+                {
+                    name: 'CSE 422: Artificial Intelligence',
+                    link: 'https://cse.sds.bracu.ac.bd/course/view/CSE422',
+                    details: [
+                        'Covered topics such as machine learning, including supervised and unsupervised learning.',
+                        'Implemented AI algorithms and models using Python and TensorFlow.',
+                        'Supervised lab sessions and guided students in their AI projects.',
+                    ],
+                },
+            ],
+        },
     ];
+
+    // reverse the semesters to show the latest one first
+    semesters.reverse();
 
     return (
         <Container

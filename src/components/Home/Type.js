@@ -6,10 +6,14 @@ function Type() {
         <Typewriter
             options={{
                 strings: [
-                    'Teacher',
-                    'Researcher',
-                    'Former Competitive Programmer',
-                    // 'Full Stack Developer',
+                    'Computational Biologist',
+                    'Single-Cell Transcriptomics',
+                    'Machine Learning for Genomics',
+                    'Statistical Genetics',
+                    'Bioinformatics Pipelines',
+                    'Deep Learning for Biology',
+                    'scRNA-seq / scATAC-seq',
+                    'Reproducible Research (R/Python)',
                 ],
                 autoStart: true,
                 loop: true,

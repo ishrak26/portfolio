@@ -2,12 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCards';
 import Particle from '../Particle';
-import leaf from '../../Assets/Projects/leaf.png';
-import emotion from '../../Assets/Projects/emotion.png';
-import editor from '../../Assets/Projects/codeEditor.png';
-import chatify from '../../Assets/Projects/chatify.png';
-import suicide from '../../Assets/Projects/suicide.png';
-import bitsOfCode from '../../Assets/Projects/blog.png';
+// Images removed from projects display; cleaning up unused imports
 
 function Projects() {
     return (
@@ -25,7 +20,6 @@ function Projects() {
                 >
                     <Col md={4} className="project-card">
                         <ProjectCard
-                            imgPath={chatify}
                             isBlog={false}
                             title="CineConnect"
                             description="A comprehensive web platform built for cinema enthusiasts, offering movie information, theater showtimes, fan discussions, and a unique marketplace for movie-themed artwork."
@@ -46,7 +40,6 @@ function Projects() {
 
                     <Col md={4} className="project-card">
                         <ProjectCard
-                            imgPath={bitsOfCode}
                             isBlog={false}
                             title="Hippocampus Segmentation for Alzheimer’s Dementia Prediction"
                             description="An image segmentation project focusing on hippocampus extraction from MRI scans to support early-stage dementia prediction. We used a U-Net model with Swish activation and Dice loss to improve segmentation quality."
@@ -66,7 +59,6 @@ function Projects() {
 
                     <Col md={4} className="project-card">
                         <ProjectCard
-                            imgPath={editor}
                             isBlog={false}
                             title="Maguire-in-the-Middle"
                             description="A real-time 5-player embedded game where one player attempts to catch a ball while the other four players aim to prevent it. The game is built using joysticks, a gyroscope, and microcontrollers to simulate interactive gameplay."
@@ -86,7 +78,6 @@ function Projects() {
 
                     <Col md={4} className="project-card">
                         <ProjectCard
-                            imgPath={leaf}
                             isBlog={false}
                             title="Football Player Transfer Database System"
                             description="A JavaFX-based desktop application simulating the football player transfer market. The system supports real-time player transfers between clubs using Java networking and multi-threading, with a GUI to manage player data, initiate transfers, and handle concurrent operations."
@@ -108,7 +99,6 @@ function Projects() {
 
                     <Col md={4} className="project-card">
                         <ProjectCard
-                            imgPath={suicide}
                             isBlog={false}
                             title="DX-Ball"
                             description="A recreation of the classic arcade-style DX-Ball game built using C/C++ and the iGraphics library. The project emphasizes core structured programming principles through interactive gameplay mechanics, including paddle movement, ball physics, and brick collision logic."

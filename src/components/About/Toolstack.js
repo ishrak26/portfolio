@@ -1,6 +1,15 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { SiPostman, SiSlack, SiVercel, SiRender } from 'react-icons/si';
+import {
+    SiPostman,
+    SiSlack,
+    SiVercel,
+    SiRender,
+    SiJupyter,
+    SiAnaconda,
+    SiOverleaf,
+    SiGithub,
+} from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
 import { FaUbuntu } from 'react-icons/fa';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
@@ -8,8 +17,15 @@ import './Toolstack.css'; // Import custom styles
 
 function Toolstack() {
     const tools = [
+        // Research/academia tooling first
+        { icon: <SiJupyter />, name: 'Jupyter' },
+        { icon: <SiAnaconda />, name: 'Anaconda' },
+        { icon: <SiOverleaf />, name: 'Overleaf' },
+        { icon: <SiGithub />, name: 'GitHub' },
         { icon: <FaUbuntu />, name: 'Ubuntu' },
         { icon: <VscVscode />, name: 'VS Code' },
+
+        // Dev utilities and deployments
         { icon: <SiPostman />, name: 'Postman' },
         // { icon: <SiSlack />, name: 'Slack' },
         { icon: <SiRender />, name: 'Render' },

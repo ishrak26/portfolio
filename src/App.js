@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import Research from './components/Research/Research';
 import Teaching from './components/Teaching/Teaching';
 import Footer from './components/Footer';
 import Resume from './components/Resume/ResumeNew';
@@ -38,6 +39,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/project" element={<Projects />} />
+                    <Route path="/research" element={<Research />} />
                     <Route path="/teaching" element={<Teaching />} />
                     <Route path="/about" element={<About />} />
                     {/* <Route path="/resume" element={<Resume />} /> */}

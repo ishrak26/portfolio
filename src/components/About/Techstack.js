@@ -21,6 +21,7 @@ import {
     SiNumpy,
     SiPandas,
     SiTensorflow,
+    SiPytorch,
 } from 'react-icons/si';
 import { LuMicrochip } from 'react-icons/lu';
 import { GiProcessor } from 'react-icons/gi';
@@ -28,13 +29,12 @@ import { ReactComponent as ScanpyIcon } from '../../Assets/icons/Scanpy_Logo_Bri
 
 function Techstack() {
     const tools = [
-        { icon: <CgCPlusPlus />, name: 'C/C++' },
+        // Research/academia-focused first
         { icon: <DiPython />, name: 'Python' },
-        { icon: <DiJava />, name: 'Java' },
         { icon: <SiR />, name: 'R' },
-        { icon: <DiJavascript1 />, name: 'JavaScript' },
         { icon: <SiNumpy />, name: 'NumPy' },
         { icon: <SiPandas />, name: 'Pandas' },
+        { icon: <SiPytorch />, name: 'PyTorch' },
         { icon: <SiTensorflow />, name: 'TensorFlow' },
         {
             icon: (
@@ -68,18 +68,27 @@ function Techstack() {
             ),
             name: 'Seurat',
         },
+        { icon: <SiLatex />, name: 'LaTeX' },
+        { icon: <SiGnubash />, name: 'Bash' },
+        { icon: <DiGit />, name: 'Git' },
+
+        // Core languages
+        { icon: <CgCPlusPlus />, name: 'C/C++' },
+        { icon: <DiJava />, name: 'Java' },
+
+        // Web/dev & databases
+        { icon: <DiJavascript1 />, name: 'JavaScript' },
         { icon: <DiNodejs />, name: 'Node.js' },
         { icon: <DiReact />, name: 'React' },
         { icon: <SiNextdotjs />, name: 'Next.js' },
         { icon: <SiPostgresql />, name: 'PostgreSQL' },
         { icon: <SiOracle />, name: 'OracleDB' },
+
+        // Systems/embedded/graphics
         { icon: <GiProcessor />, name: '8086 Assembly' },
-        { icon: <SiGnubash />, name: 'Bash' },
         { icon: <LuMicrochip />, name: 'ATmega32' },
         { icon: <SiArduino />, name: 'Arduino UNO' },
         { icon: <SiOpengl />, name: 'OpenGL' },
-        { icon: <DiGit />, name: 'Git' },
-        { icon: <SiLatex />, name: 'LaTeX' },
     ];
 
     return (

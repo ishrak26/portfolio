@@ -251,7 +251,7 @@ button:focus {
 }
 
 .home-header {
-    padding-top: 80px !important;
+    padding-top: 24px !important;
 }
 
 .home-section {
@@ -265,9 +265,15 @@ button:focus {
 }
 
 .home-content {
-    padding: 9rem 0 2rem !important;
+    padding: 4rem 0 2rem !important;
     color: whitesmoke;
     text-align: left;
+}
+
+@media (max-width: 767px) {
+    .home-content {
+        padding: 3rem 0 1.5rem !important;
+    }
 }
 
 .heading {
@@ -306,14 +312,17 @@ button:focus {
 }
 
 .myAvtar {
-    justify-content: center !important;
-    padding-top: 9em !important;
+    display: flex;
+    align-items: flex-start; /* align image to top */
+    justify-content: center !important; /* keep centered horizontally */
+    padding-top: 24px !important; /* reduced from 9em for alignment */
 }
 
 @media (max-width: 767px) {
     .myAvtar {
-        padding-top: 2em !important;
+        padding-top: 12px !important;
         padding-bottom: 2em !important;
+        align-items: center; /* center vertically on small screens */
     }
 }
 
@@ -337,13 +346,13 @@ button:focus {
 
 .home-about-section {
     position: relative;
-    padding-bottom: 70px !important;
-    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+    padding-top: 20px !important;
 }
 
 .home-about-description {
     color: white !important;
-    padding-top: 100px !important;
+    padding-top: 20px !important;
     padding-bottom: 20px !important;
     text-align: center;
 }
@@ -558,6 +567,78 @@ button:focus {
 
 /* --------- */
 /* About */
+/* --------- */
+/* Education Timeline */
+/* --------- */
+.education-timeline {
+    position: relative;
+    margin: 1.5rem 0;
+    padding-left: 56px; /* increased space for line and dots to avoid overlap */
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px; /* moved line right to align with increased padding */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(197, 91, 245, 0.5); /* purple line */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.timeline-dot {
+    display: none; /* hide purple circle */
+}
+
+.timeline-content {
+    background: transparent;
+    color: #ffffff;
+    padding: 4px 8px 8px 0; /* remove extra left padding to maximize clearance */
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.timeline-degree {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.timeline-time {
+    font-size: 0.9rem;
+    color: #a588c0;
+}
+
+.timeline-sub {
+    font-size: 0.95rem;
+    color: #ddd;
+    text-align: left; /* keep institution left-aligned */
+}
+
+.timeline-sep {
+    color: #a588c0;
+}
+
+.timeline-result {
+    margin-top: 4px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 /* --------- */
 
 .about-section {

@@ -9,7 +9,7 @@ function Type() {
                     'Teacher',
                     'Researcher',
                     'Former Competitive Programmer',
-                    'Full Stack Developer',
+                    // 'Full Stack Developer',
                 ],
                 autoStart: true,
                 loop: true,

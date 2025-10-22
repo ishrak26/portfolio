@@ -1,8 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-// import myImg from '../../Assets/avatar.svg';
-import myImg from '../../Assets/me.png';
-import Tilt from 'react-parallax-tilt';
 import { AiFillGithub, AiOutlineX, AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn, FaKaggle, FaFacebook } from 'react-icons/fa';
 import { SiCodeforces } from 'react-icons/si';
@@ -11,61 +8,98 @@ import { MdEmail } from 'react-icons/md';
 function Home2() {
     return (
         <Container fluid className="home-about-section" id="about">
-            <Container>
+            <Container fluid>
                 <Row>
-                    <Col md={8} className="home-about-description">
+                    <Col md={12} className="home-about-description">
                         <h1 style={{ fontSize: '2.6em' }}>
                             LET ME <span className="purple"> INTRODUCE </span>{' '}
                             MYSELF
                         </h1>
                         <p className="home-about-body">
-                            I fell in love with programming and I have at least
-                            learnt something, I think… 🤷‍♂️
-                            <br />
-                            <br />I am fluent in classics like
+                            I am an aspiring researcher in{' '}
+                            <i>
+                                <b className="purple">computational biology</b>
+                            </i>{' '}
+                            with a focus on{' '}
                             <i>
                                 <b className="purple">
-                                    {' '}
-                                    C++, Python and Java.{' '}
+                                    single-cell transcriptomics
+                                </b>
+                            </i>{' '}
+                            and{' '}
+                            <i>
+                                <b className="purple">
+                                    statistical machine learning
                                 </b>
                             </i>
-                            <br />
-                            <br />
-                            My field of interests lie in &nbsp;
+                            . My current work explores{' '}
                             <i>
                                 <b className="purple">
-                                    Bio and Health Informatics, Single-Cell
-                                    Transcriptomics, and Deep Learning.
-                                </b>{' '}
-                                {/* and also in areas related to{' '}
-                                <b className="purple">Blockchain.</b> */}
-                            </i>
-                            <br />
-                            <br />
-                            Whenever possible, I also apply my passion for
-                            developing products with{' '}
-                            <b className="purple">Node.js</b> and
-                            <i>
-                                <b className="purple">
-                                    {' '}
-                                    Modern Javascript Library and Frameworks
+                                    supervised dimensionality reduction
                                 </b>
-                            </i>
-                            &nbsp; like
+                            </i>{' '}
+                            for scRNA-seq to uncover disease-relevant signal in{' '}
                             <i>
-                                <b className="purple"> React.js and Next.js.</b>
+                                <b className="purple">Alzheimer's disease</b>
+                            </i>{' '}
+                            and its comorbidities.
+                            <br />
+                            <br />
+                            Broadly, I am interested in differential expression
+                            modeling, representation learning, multimodal
+                            integration, and principled evaluation for
+                            biological discovery in{' '}
+                            <i>
+                                <b className="purple">Bio/Health Informatics</b>
                             </i>
+                            . I value reproducibility and transparent analysis
+                            pipelines.
+                            <br />
+                            <br />
+                            Day-to-day, I work primarily in{' '}
+                            <i>
+                                <b className="purple">Python</b>
+                            </i>{' '}
+                            (Scanpy/Anndata, NumPy/Pandas), and am comfortable
+                            with{' '}
+                            <i>
+                                <b className="purple">R</b>
+                            </i>{' '}
+                            packages like{' '}
+                            <i>
+                                <b className="purple">Seurat</b>
+                            </i>
+                            ,{' '}
+                            <i>
+                                <b className="purple">Muscat</b>
+                            </i>
+                            , and modern deep learning tools (PyTorch/
+                            TensorFlow) when appropriate.
+                            <br />
+                            <br />I have completed my{' '}
+                            <i>
+                                <b className="purple">B.Sc. in CSE</b>
+                            </i>{' '}
+                            from{' '}
+                            <i>
+                                <b className="purple">BUET</b>
+                            </i>{' '}
+                            with a{' '}
+                            <i>
+                                <b className="purple">CGPA of 3.98/4.00</b>
+                            </i>
+                            , and I am seeking opportunities to pursue a{' '}
+                            <i>
+                                <b className="purple">Ph.D.</b>
+                            </i>{' '}
+                            in areas of{' '}
+                            <i>
+                                <b className="purple">computational biology</b>
+                            </i>
+                            , and I enjoy collaborating with biologists and
+                            clinicians on impactful problems.
                         </p>
                     </Col>
-                    {/* <Col md={4} className="myAvtar">
-                        <Tilt>
-                            <img
-                                src={myImg}
-                                className="img-fluid"
-                                alt="avatar"
-                            />
-                        </Tilt>
-                    </Col> */}
                 </Row>
                 <Row>
                     <Col md={12} className="home-about-social">

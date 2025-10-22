@@ -6,6 +6,8 @@ import Techstack from './Techstack';
 import Aboutcard from './AboutCard';
 import laptopImg from '../../Assets/about.png';
 import Toolstack from './Toolstack';
+import EducationTimeline from './EducationTimeline';
+import education from './educationData';
 
 function About() {
     return (
@@ -40,6 +42,11 @@ function About() {
                         />
                     </Col>
                 </Row>
+                <h1 className="project-heading" style={{ marginTop: '1rem' }}>
+                    <strong className="purple">Education</strong>
+                </h1>
+                <EducationTimeline items={education} />
+
                 <h1 className="project-heading">
                     Professional <strong className="purple">Skillset </strong>
                 </h1>

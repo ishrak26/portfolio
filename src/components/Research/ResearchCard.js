@@ -66,14 +66,20 @@ function ResearchCard(props) {
                     borderBottom: '1px solid rgba(255,255,255,0.1)',
                 }}
             >
-                <div>
-                    <div style={{ fontSize: '1.1rem', fontWeight: 600 }}>
+                <div style={{ flex: 1 }}>
+                    <div
+                        style={{
+                            fontSize: '1.1rem',
+                            fontWeight: 600,
+                            textAlign: 'center',
+                        }}
+                    >
                         {props.title}
                     </div>
                     {(props.institution || props.role || timeline) && (
                         <div
                             className="text-muted"
-                            style={{ fontSize: '0.9rem' }}
+                            style={{ fontSize: '0.9rem', textAlign: 'center' }}
                         >
                             {props.role && <span>{props.role}</span>}
                             {props.role &&
@@ -91,6 +97,7 @@ function ResearchCard(props) {
                     style={{
                         transition: 'transform 0.2s',
                         transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
+                        marginLeft: '10px',
                     }}
                     aria-hidden="true"
                 />
@@ -109,7 +116,9 @@ function ResearchCard(props) {
                 <div>
                     <Card.Body>
                         {/* Key details */}
-                        {(props.supervisor || props.collaborators) && (
+                        {(props.supervisor ||
+                            (props.collaborators &&
+                                props.collaborators.length > 0)) && (
                             <div style={{ marginBottom: '0.5rem' }}>
                                 {props.supervisor && (
                                     <div>
@@ -117,20 +126,23 @@ function ResearchCard(props) {
                                         {renderPeople(props.supervisor)}
                                     </div>
                                 )}
-                                {props.collaborators && (
-                                    <div>
-                                        <strong>
-                                            {Array.isArray(props.collaborators)
-                                                ? props.collaborators.length ===
-                                                  1
-                                                    ? 'Collaborator'
-                                                    : 'Collaborators'
-                                                : 'Collaborator'}
-                                            :
-                                        </strong>{' '}
-                                        {renderPeople(props.collaborators)}
-                                    </div>
-                                )}
+                                {props.collaborators &&
+                                    props.collaborators.length > 0 && (
+                                        <div>
+                                            <strong>
+                                                {Array.isArray(
+                                                    props.collaborators
+                                                )
+                                                    ? props.collaborators
+                                                          .length === 1
+                                                        ? 'Collaborator'
+                                                        : 'Collaborators'
+                                                    : 'Collaborator'}
+                                                :
+                                            </strong>{' '}
+                                            {renderPeople(props.collaborators)}
+                                        </div>
+                                    )}
                             </div>
                         )}
 
@@ -216,7 +228,7 @@ function ResearchCard(props) {
                                         target="_blank"
                                         style={{ marginLeft: '10px' }}
                                     >
-                                        <CgWebsite /> &nbsp; Paper
+                                        <CgWebsite /> &nbsp; Report
                                     </Button>
                                 )}
                             </div>

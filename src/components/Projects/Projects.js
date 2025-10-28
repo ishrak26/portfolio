@@ -10,7 +10,7 @@ function Projects() {
             <Particle />
             <Container>
                 <h1 className="project-heading">
-                    My Recent <strong className="purple">Works </strong>
+                    My Recent <strong className="purple">Projects </strong>
                 </h1>
                 <p style={{ color: 'white' }}>
                     Here are a few projects I've worked on recently.
@@ -38,7 +38,7 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    {/* <Col md={4} className="project-card">
                         <ProjectCard
                             isBlog={false}
                             title="Hippocampus Segmentation for Alzheimer’s Dementia Prediction"
@@ -55,7 +55,7 @@ function Projects() {
                             techStackLabel="Keywords"
                             ghLink="https://github.com/ishrak26/CSE-472-Machine-Learning-Sessional-Project"
                         />
-                    </Col>
+                    </Col> */}
 
                     <Col md={4} className="project-card">
                         <ProjectCard

@@ -13,11 +13,11 @@ function AboutCard() {
                         from <span className="purple"> Dhaka, Bangladesh.</span>
                         <br />
                         I am currently serving as a Lecturer in the Department
-                        of CSE at BRAC University. Previously, I served as an
+                        of CSE at BRAC University. I am also working as an
                         Adjunct Lecturer in the CSE Department at Bangladesh
                         University of Engineering and Technology (BUET).
                         <br />I completed BSc in Computer Science and
-                        Engineering from CSE, BUET in March, 2025 with a CGPA of{' '}
+                        Engineering from BUET in March, 2025 with a CGPA of{' '}
                         <span className="purple">3.98</span>, ranking 6th in my
                         class.
                         <br />

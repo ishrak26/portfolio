@@ -3,7 +3,7 @@
 
 const researchItems = [
     {
-        title: "Supervised Principal Component Analysis for Single-Cell Differential Gene Expression in Alzheimer's Disease and Comorbidities",
+        title: 'Phenotype Aligned Cluster Analysis for Single-Cell Differential Gene Expression Discovers New Genetic Association in Excitatory Neurons and Astrocytes in Alzheimer’s Disease and Comorbidities',
         role: 'Undergraduate Thesis',
         institution: 'Samee + MDSR Lab',
         timeline: 'Jan 2024 — Feb 2025',
@@ -43,6 +43,34 @@ const researchItems = [
         ],
         // codeLink: 'https://github.com/your/repo',
         // paperLink: 'https://arxiv.org/abs/...',
+    },
+    {
+        title: 'Time-Varying Mixture Models for Enhanced Phylogenetic Inference',
+        role: 'Research Project',
+        institution: 'CSE, BUET',
+        timeline: 'Aug 2025 — Sep 2025',
+        supervisor: {
+            name: ' Dr. Md. Shamsuzzoha Bayzid',
+            url: 'https://cse.buet.ac.bd/faculty/faculty_detail/bayzid',
+        },
+        collaborators: [],
+        description: '',
+        bullets: [
+            ' Implemented a time‑heterogeneous GTR+R phylogenetic model in IQ‑TREE.',
+
+            'Simulated DNA alignments with AliSim to compare time‑homogeneous vs heterogeneous models.',
+
+            'Found substantially better likelihood/AIC fit for the time‑heterogeneous model.',
+        ],
+        topics: [
+            'Phylogenetics',
+            'Time‑heterogeneous Models',
+            'IQ‑TREE',
+            'GTR',
+        ],
+        // codeLink: '',
+        paperLink:
+            'https://drive.google.com/file/d/10kKpFfzgcmi93TjMfCu9HInnepdAs6rp/view?usp=sharing',
     },
     {
         title: "Hippocampus Segmentation for Alzheimer's Induced Dementia Prediction",

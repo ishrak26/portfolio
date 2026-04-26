@@ -1,0 +1,132 @@
+.institution-tabs-container {
+    margin-bottom: 2.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.institution-tabs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding-bottom: 0.5rem;
+    min-width: min-content;
+}
+
+.institution-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: rgba(99, 179, 237, 0.05);
+    color: #ccc;
+    border: 1px solid rgba(99, 179, 237, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.institution-tab:hover::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 0.6rem 0.9rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: normal;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    word-wrap: break-word;
+}
+
+.institution-tab:hover::after {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 0.5rem - 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.institution-tab:hover {
+    background-color: rgba(99, 179, 237, 0.1);
+    border-color: rgba(99, 179, 237, 0.4);
+    color: #63b3ed;
+    transform: translateY(-1px);
+}
+
+.institution-tab.active {
+    background: linear-gradient(135deg, #63b3ed 0%, #4a9fd8 100%);
+    color: #fff;
+    border-color: #63b3ed;
+    box-shadow: 0 4px 12px rgba(99, 179, 237, 0.25);
+}
+
+.tab-text {
+    display: inline;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.institution-tab.active .tab-count {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.teaching-content {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .institution-tabs {
+        gap: 0.5rem;
+    }
+
+    .institution-tab {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .tab-text {
+        max-width: 100px;
+    }
+}
